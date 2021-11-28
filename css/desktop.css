@@ -1,0 +1,37 @@
+@media (min-width: 992px) {
+  /*   Section qui contient Hebergement / Les plus populaires    */
+  .section--contained {
+    padding: 32px;
+    border-radius: 20px;
+    background-color: var(--couleur-04);
+  }
+
+  /* Section Hebergement */
+  .section--lg {flex: 2 0 0;}
+
+  /* Section Les plus populaires */
+  .section--sm {flex: 1 0 0;}
+
+  /* Conteneur d'items d'Activités */
+  .card-masonry {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 512px;
+  }
+
+  /* items de la section Activités */
+  .card-masonry__item {
+    flex-grow: 1;
+    width: calc(25% - 24px / 4 * 3);
+    min-height: auto;
+  }
+  .card-masonry__item--lg {flex: 0 0 100%;}
+  .card-masonry__item--md {flex: 1 1 calc(60% - 24px * 2);}
+  .card-masonry__item--sm {flex: 1 1 calc(40% - 24px * 2);}
+
+  /* Card contenu */
+  .card--full .card__thumb {flex: 1; min-height: 0;}
+  .card--full .card__content {flex: 0;}
+  
+}
